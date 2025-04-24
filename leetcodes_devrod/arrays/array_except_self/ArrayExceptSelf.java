@@ -20,6 +20,27 @@ public class ArrayExceptSelf {
         return res;
     }
 
+
+    //Método para calcular o produto de todos os elementos, exceto o próprio elemento, usando paralelismo, ideal para grandes arrays, Yooo! 🥷
+    public static int[] productExceptSelfWithParallel(int[] nums){
+        int n = nums.length;
+
+        int[] prefix = new int[n], res = new int[n];
+
+        prefix[0] = 1;
+        for(int i = 1; i < n; i++){
+            prefix[i] = prefix[i - 1] * nums[i - 1];
+        }
+
+        int suffix = 1;
+
+        for(int i = n - 1; i >= 0; i--){
+            res[i] = prefix[i] * suffix;
+            suffix *= nums[i];
+        }
+        return res;
+    }
+
     public static void main(String[] args) throws Exception {
         int[] nums = {1, 2, 3, 4};
         int[] result = productExceptSelf(nums);
