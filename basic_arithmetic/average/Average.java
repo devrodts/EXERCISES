@@ -1,4 +1,4 @@
-package avarage;
+package basic_arithmetic.average;
 
 public class Average {
  
@@ -13,7 +13,6 @@ public class Average {
         average.CalculateAverage(10, 20, 30);
         System.out.println("Average method executed successfully.");
 
-        // Create an instance of CalculateAverage with an array of numbers
         int[] numbers = {10, 20, 30};
         Average.CalculateAverage calculateAverage = new Average.CalculateAverage(numbers);
         double result = calculateAverage.calculate();

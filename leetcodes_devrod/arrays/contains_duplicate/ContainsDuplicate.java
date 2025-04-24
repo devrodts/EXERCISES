@@ -1,4 +1,4 @@
-package leetcodes_devrod.contains_duplicate;
+package leetcodes_devrod.arrays.contains_duplicate;
 
 public class ContainsDuplicate {
 

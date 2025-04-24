@@ -1,4 +1,4 @@
-package sum;
+package basic_arithmetic.sum;
 import java.util.Scanner;
 
 public class Sum{

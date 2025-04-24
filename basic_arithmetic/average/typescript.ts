@@ -9,6 +9,7 @@ interface Average{
 
 export const calculateAverageWithInterface = (average: Average): number => (average.a + average.b) / 2;
 
+
 export class AverageClass{
     a: number;
     b: number;
