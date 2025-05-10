@@ -18,7 +18,6 @@ public class Average {
         double result = calculateAverage.calculate();
         System.out.println("The average of the array is: " + result);
         System.out.println("CalculateAverage method executed successfully.");
-
     }
 
 
