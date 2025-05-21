@@ -1,5 +1,4 @@
 
-
 #[derive(Debug, PartialEq, Eq)]
 pub struct Node{
     pub val: i32,
@@ -40,8 +39,6 @@ fn pub level_order_traversal(root: &Option<Box<Node>>) -> Vec<Vec<i32>>{
     }
     result
 }
-
-
 
 fn swap_at_depth(node: &mut Option<Box<Node>>, k: usize, depth: usize) {
     if let Some(nd) = node {

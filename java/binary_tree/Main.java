@@ -1,4 +1,4 @@
-package binary_tree.java;
+package java.binary_tree;
 import java.util.*;
 public class Main{
 
